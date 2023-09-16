@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     "home.apps.HomeConfig",
     "visitor.apps.VisitorConfig",
     "dailyuser.apps.DailyuserConfig",
+    
 ]
 
 MIDDLEWARE = [
