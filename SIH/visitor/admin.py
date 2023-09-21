@@ -1,28 +1,28 @@
 from django.contrib import admin
-from .models  import ChildrenLR, MensLR, WomenLR, TransgenderLR ,CommonsLR
+from .models  import Children_law, Mens_law, Women_law, Transgender_law,Commons_law
 
 # Register your models here.
 admin.site.site_header="SECURE JUSTICE"
 
-@admin.register(ChildrenLR)
-class ChildrenLRAdmin(admin.ModelAdmin):
+@admin.register(Children_law)
+class Children_lawAdmin(admin.ModelAdmin):
     list_display = ("title", "content", "file","website_link","date")
 
 
-@admin.register(MensLR)
-class MensLRAdmin(admin.ModelAdmin):
+@admin.register(Mens_law)
+class Mens_lawAdmin(admin.ModelAdmin):
      list_display = ("title", "content", "file","website_link","date")
 
-@admin.register(WomenLR)
-class WomenLRAdmin(admin.ModelAdmin):
+@admin.register(Women_law)
+class Women_lawAdmin(admin.ModelAdmin):
     list_display = ("title", "content", "file","website_link","date")
 
 
-@admin.register(TransgenderLR )
-class TransgenderLRAdmin(admin.ModelAdmin):
+@admin.register(Transgender_law)
+class Transgender_lawAdmin(admin.ModelAdmin):
     list_display = ("title", "content", "file","website_link","date")
 
-@admin.register(CommonsLR)
-class CommonsLRAdmin(admin.ModelAdmin):
+@admin.register(Commons_law)
+class Commons_lawAdmin(admin.ModelAdmin):
         list_display = ("title", "content", "file","website_link","date")
     

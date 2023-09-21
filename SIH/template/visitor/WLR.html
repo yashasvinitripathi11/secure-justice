@@ -6,5 +6,9 @@
 
 <body>
     <center><h1>WOMEN LAWS AND RIGHT   </h1></center>
+    {% for law in Women_laws %}
+    <h1>{{ law.title }}</h1>
+    <p>{{ law.content }}</p>
+    {% endfor %}
 </body>
 {% endblock mainbody %}

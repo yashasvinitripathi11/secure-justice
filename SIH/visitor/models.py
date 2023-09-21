@@ -1,8 +1,23 @@
 from django.db import models
 
-#Model of children laws and right:
 
-class ChildrenLR(models.Model):
+#===================================Model of Commons laws and right:=============================================
+
+class Commons_law(models.Model):
+
+   title=models.CharField(max_length=50,blank=True,null=True)
+
+   content=models.TextField(blank=True,null=True)
+
+   file=models.FileField(blank=True,null=True)
+
+   website_link=models.URLField(blank=True,null=True)
+
+   date=models.DateTimeField(auto_now_add=True,blank=True,null=True) 
+
+#===================================Model of children laws and right:===============================================
+
+class Children_law(models.Model):
 
    title=models.CharField(max_length=50,blank=True,null=True)
 
@@ -14,9 +29,9 @@ class ChildrenLR(models.Model):
 
    date=models.DateTimeField(auto_now_add=True,blank=True,null=True) 
 
-#Model of Mens  laws and right:
+#====================================Model of Mens  laws and right:======================================================
 
-class MensLR(models.Model):
+class Mens_law(models.Model):
 
    title=models.CharField(max_length=50,blank=True,null=True)
 
@@ -28,9 +43,9 @@ class MensLR(models.Model):
 
    date=models.DateTimeField(auto_now_add=True,blank=True,null=True) 
 
-#Model of Women  laws and right:
+#=====================================Model of Women  laws and right:======================================================
 
-class WomenLR(models.Model):
+class Women_law(models.Model):
 
    title=models.CharField(max_length=50,blank=True,null=True)
 
@@ -42,9 +57,9 @@ class WomenLR(models.Model):
 
    date=models.DateTimeField(auto_now_add=True,blank=True,null=True) 
 
-#Model of Transgender laws and right:
+#=======================================Model of Transgender laws and right:====================================================
 
-class TransgenderLR(models.Model):
+class Transgender_law(models.Model):
 
    title=models.CharField(max_length=50,blank=True,null=True)
 
@@ -56,16 +71,3 @@ class TransgenderLR(models.Model):
 
    date=models.DateTimeField(auto_now_add=True,blank=True,null=True) 
 
-#Model of Commons laws and right:
-
-class CommonsLR(models.Model):
-
-   title=models.CharField(max_length=50,blank=True,null=True)
-
-   content=models.TextField(blank=True,null=True)
-
-   file=models.FileField(upload_to='CLR/',blank=True,null=True)
-
-   website_link=models.URLField(blank=True,null=True)
-
-   date=models.DateTimeField(auto_now_add=True,blank=True,null=True) 
