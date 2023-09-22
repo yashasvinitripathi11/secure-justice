@@ -10,5 +10,4 @@ urlpatterns=[
     path("MLR",views.MLR,name="MLR"),
     path("WLR",views.WLR,name="WLR"),
     path("TLR",views.TLR,name="TLR"),
-
 ]
