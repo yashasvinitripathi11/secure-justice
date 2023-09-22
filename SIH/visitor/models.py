@@ -9,7 +9,7 @@ class Commons_law(models.Model):
 
    content=models.TextField(blank=True,null=True)
 
-   file=models.FileField(upload_to='CL/',blank=True,null=True)
+   file=models.FileField(upload_to='laws/',blank=True,null=True)
 
    website_link=models.URLField(blank=True,null=True)
 

@@ -11,7 +11,7 @@
     <h1>{{ law.title }}</h1>
     <p>{{ law.content }}</p>
     <iframe src="{{ law.file.url }}" frameborder="0"></iframe>
-    <embed src="{{ law.file.url }}" type="application/pdf">
+    <a href="{{ law.website_link }}" target="_blank" >Link of our website</a>
     {% endfor %}
 
 </body>

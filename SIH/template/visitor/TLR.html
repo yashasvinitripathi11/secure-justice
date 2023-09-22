@@ -9,6 +9,8 @@
     {% for law in Transgender_laws %}
     <h1>{{ law.title }}</h1>
     <p>{{ law.content }}</p>
+    <iframe src="{{ law.file.url }}" frameborder="0"></iframe>
+    <a href="{{ law.website_link }}" target="_blank" >Link of our website</a>
     {% endfor %}
 </body>
 {% endblock mainbody %}
