@@ -4,13 +4,14 @@
 
 {% block mainbody %}
 
-<body>
+  
+  <p>You can translate the content of this page by selecting a language in the select box.</p>
     <center><h1>MENS LAWS AND RIGHT  </h1></center>
     {% for law in Mens_laws %}
     <h1>{{ law.title }}</h1>
     <p>{{ law.content }}</p>
-    <iframe src="{{ law.file.url }}" frameborder="0"></iframe>
-    <a href="{{ law.website_link }}" target="_blank" >Link of our website</a>
     {% endfor %}
+    <a href="{{ law.website_link }}" target="_blank" >Link of our website</a>
 </body>
+
 {% endblock mainbody %}

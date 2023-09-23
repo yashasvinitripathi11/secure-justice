@@ -84,12 +84,8 @@ WSGI_APPLICATION = 'SIH.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'secure_justice',
-        'USER': 'root',
-        'PASSWORD': 'GLAr5YnK$',
-        'HOST': 'localhost',
-        'PORT': '3306',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 

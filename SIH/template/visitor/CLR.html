@@ -1,16 +1,13 @@
-{% extends "visitor/base.html" %} 
-
-{% load static %}
-
-{% block mainbody %}
+{% extends "visitor/base.html" %} {% load static %} {% block mainbody %}
 
 <body>
-    <center><h1>CHILDREN LAWS AND RIGHT  </h1></center>
-    {% for law in Child_laws %}
-    <h1>{{ law.title }}</h1>
-    <p>{{ law.content }}</p>
-    <iframe src="{{ law.file.url }}" frameborder="0"></iframe>
-    <a href="{{ law.website_link }}" target="_blank" >Link of our website</a>
-    {% endfor %}
+  <center><h1>CHILDREN LAWS AND RIGHT</h1></center>
+  {% for law in Child_laws %}
+  <h1>{{ law.title }}</h1>
+  <p>{{ law.content }}</p>
+  <iframe src="{{ law.file.url }}" frameborder="0"></iframe>
+  {% endfor %}
+  <a href="{{ law.website_link }}" target="_blank">Link of our website</a>
 </body>
-{% endblock mainbody %} 
+
+{% endblock mainbody %}
