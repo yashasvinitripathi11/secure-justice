@@ -12,6 +12,8 @@ class Commons_law(models.Model):
    file=models.FileField(upload_to='laws/',blank=True,null=True)
 
    website_link=models.URLField(blank=True,null=True)
+   
+   law_videos = models.FileField(upload_to='law video',blank=True,null=True)
 
    date=models.DateTimeField(auto_now_add=True,blank=True,null=True) 
 
@@ -27,6 +29,8 @@ class Children_law(models.Model):
 
    website_link=models.URLField(blank=True,null=True)
 
+   law_videos = models.FileField(upload_to='law video',blank=True,null=True)
+
    date=models.DateTimeField(auto_now_add=True,blank=True,null=True) 
 
 #====================================Model of Mens  laws and right:======================================================
@@ -40,6 +44,8 @@ class Mens_law(models.Model):
    file=models.FileField(upload_to='MLR/',blank=True,null=True)
 
    website_link=models.URLField(blank=True,null=True)
+
+   law_videos = models.FileField(upload_to='law video',blank=True,null=True)
 
    date=models.DateTimeField(auto_now_add=True,blank=True,null=True) 
 
@@ -55,6 +61,8 @@ class Women_law(models.Model):
 
    website_link=models.URLField(blank=True,null=True)
 
+   law_videos = models.FileField(upload_to='law video',blank=True,null=True)
+
    date=models.DateTimeField(auto_now_add=True,blank=True,null=True) 
 
 #=======================================Model of Transgender laws and right:====================================================
@@ -68,6 +76,8 @@ class Transgender_law(models.Model):
    file=models.FileField(upload_to='TLR/',blank=True,null=True)
 
    website_link=models.URLField(blank=True,null=True)
+
+   law_videos = models.FileField(upload_to='law video',blank=True,null=True)
 
    date=models.DateTimeField(auto_now_add=True,blank=True,null=True) 
 
